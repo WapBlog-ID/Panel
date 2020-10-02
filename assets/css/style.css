@@ -43,6 +43,7 @@ ul, ol {
 header nav {
   background: var(--wb-primary-color);
   padding: 5px 0;
+  box-shadow: 0 2px 2px #0003;
 }
 header .header-bars {
   background: var(--wb-secondary-color);
@@ -217,4 +218,57 @@ aside.content#todo .content-main ul li {
   display: block;
   height: 10px;
   background: #097;
+}
+.color-header {
+  padding: 7em 0 6em;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.color-header .container {
+  display: flex;
+}
+.color-header .color-left {
+  width: 50%;
+  padding-right: 10px;
+}
+.color-header .color-right {
+  padding-left: 0;
+  width: 50%;
+}
+.color-header:after,
+.color-header:before {
+  width: calc(50% - 5px);
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.color-header:before {
+  left: 0;
+  background: #dd0d0d;
+  border-right: 5px solid #0001;
+}
+.color-header:after {
+  right: 0;
+  background: #de1339;
+  border-left: 5px solid #0001;
+}
+.color-header p {
+  margin-bottom: 10px;
+}
+.color-header .color-swatches {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: #0002;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  box-shadow: inset 0 0 2px 2px #0003
 }
