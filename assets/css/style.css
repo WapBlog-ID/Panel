@@ -171,14 +171,24 @@ footer .footer-copy a {
 }
 .content-main ul li img {
   cursor: pointer;
+  display: block;
+  opacity: 0;
 }
 .content-main ul li .project-part-name {
   line-height: 35px;
-  padding: 0 5px;
+  padding: 0 10px;
   font-size: 15px;
+}
+.content-main ul li .project-part-image {
+  margin-bottom: 5px;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 aside.content:nth-child(even) .content-main ul li {
   background: #fff;
+  border: 1px solid #d4d4d4
 }
 aside.content:nth-child(odd) .content-main ul li {
   background: #f7f7f7;
