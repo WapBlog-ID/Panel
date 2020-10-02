@@ -1,0 +1,17 @@
+/*
+---------------------------
+WapBlog.ID - Panel Project
+https://www.wapblog.id
+---------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--wb-primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
