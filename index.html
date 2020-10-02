@@ -184,7 +184,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>var __WB = $(document); __lXa = JSON.parse('{"in-progress":[{"i":"theme-editor","t":"Theme Editor","p":57}], "todo":[{"t":"Dashboard"},{"t":"Posts"},{"t":"Category"},{"t":"Pages"},{"t":"Comment"},{"t":"Guestbook"},{"t":"Statistic"},{"t":"Navigation"},{"t":"Bookmark"},{"t":"Setting Blog"},{"t":"Manage Blog"},{"t":"Custom Domain"},{"t":"Add Blog"},{"t":"Custom TXT"},{"t":"Switch Blog"},{"t":"Setting Account"},{"t":"Secure Account"}],"done":[{"i":"chatroom","t":"Chatroom"},{"i":"files","t":"Storage"}]}'), __WB.ready(function(){
+<script>var __WB = $(document); __lXa = JSON.parse('{"in-progress":[{"i":"theme-editor","t":"Theme Editor","p":57}], "todo":[{"t":"Dashboard"},{"t":"Posts"},{"t":"Category"},{"t":"Pages"},{"t":"Comment"},{"t":"Guestbook"},{"t":"Statistic"},{"t":"Navigation"},{"t":"Bookmark"},{"t":"Setting Blog"},{"t":"Manage Blog"},{"t":"Custom Domain"},{"t":"Add Blog"},{"t":"Custom TXT"},{"t":"Switch Blog"},{"t":"Setting Account"},{"t":"Secure Account"}],"done":[{"i":"chatroom","t":"Chatroom"},{"i":"files","t":"Storage"}]}');
+var __pDone = $('aside.content#done').offset().top, __pInProgress = $('aside.content#in-progess').offset().top, __pTodo = $('aside.content#todo').offset().top, __pDoneH = $('aside.content#done').height(), __pInProgressH = $('aside.content#in-progress').height(), __pDoneH = $('aside.content#done').height();
+__WB.ready(function(){
   var __currentYear = new Date().getFullYear();
   $('.current-year').text(__currentYear);
   
@@ -199,6 +201,13 @@
       $('body').addClass('onMain');
     } else {
       $('body').removeClass('onMain');
+    }
+    
+    if(__fDa >= __pDone && __fDa < __pDone+__pDoneH){
+      $('.navbar-menu ul li a[href="#done"]').addClass('cw');
+      $('.navbar-menu ul li a[href="#todo"], .navbar-menu ul li a[href="#in-progress"]').removeClass('cw');
+    } else {
+      $('.navbar-menu ul li a').removeClass('cw');
     }
   });
 });
