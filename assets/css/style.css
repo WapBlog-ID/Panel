@@ -159,3 +159,31 @@ footer .footer-copy a {
   color: #fff;
   text-decoration: underline;
 }
+.content-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px;
+}
+.content-main ul li {
+  width: calc(50% - 20px);
+  margin: 0 10px 20px;
+  box-shadow: 2px 2px 2px #0003;
+}
+.content-main ul li img {
+  cursor: pointer;
+}
+.content-main ul li .project-part-name {
+  line-height: 35px;
+  padding: 0 5px;
+  font-size: 15px;
+}
+aside.content:nth-child(even) .content-main ul li {
+  background: #fff;
+}
+aside.content:nth-child(odd) .content-main ul li {
+  background: #f7f7f7;
+}
+aside.content#todo .content-main ul li {
+  padding: 0 10px;
+  width: calc(33.333% - 20px);
+}
