@@ -126,7 +126,7 @@
 
   <div class="footer-copy">
 
-    <div class="container">&copy; 2015-<span class="current-year">2019</span> <a href="https://www.wapblog.id">WapBlog.ID</a></div>
+    <div class="container">&copy; 2015-<span class="current-year">2020</span> <a href="https://www.wapblog.id">WapBlog.ID</a></div>
 
   </div>
 
@@ -134,10 +134,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>var __WB = $(document); __WB.ready(function(){
+<script>var __WB = $(document); __lXa = JSON.parse('{"in-progress":[{"i":"theme-editor","t":"Theme Editor"}], "todo":[{"t":"Dashboard"},{"t":"Posts"},{"t":"Category"},{"t":"Pages"},{"t":"Comment"},{"t":"Guestbook"},{"t":"Statistic"},{"t":"Navigation"},{"t":"Bookmark"},{"t":"Setting Blog"},{"t":"Manage Blog"},{"t":"Custom Domain"},{"t":"Add Blog"},{"t":"Custom TXT"},{"t":"Switch Blog"},{"t":"Setting Account"},{"t":"Secure Account"}]}'), __WB.ready(function(){
   var __currentYear = new Date().getFullYear();
   $('.current-year').text(__currentYear);
-});</script>
+  
+  $('aside.content').each(function(iXa){
+    var __cXa = $(this).attr('id'), __cXb = $(this).children('.content-main');
+    __cXb.html('<i class="fa fa-spinner fa-pulse"></i> Loading');
+  });
+});
+function JSONPrintWB(__d){
+  if(typeof __lXa[__d] == 'undefined'){
+    alert(__d+': Not Valid');
+  }
+}</script>
 
 </body>
 
