@@ -195,16 +195,16 @@ __WB.ready(function(){
     __cXb.html('<ul>'+__cXd+'</ul>');
   });
   $(window).scroll(function(){
-    var __fDa = $(window).scrollTop(), __fDb = $('header').height();
-    if(__fDa > __fDb){
+    var __pDone = $('aside.content#done').offset().top, __pInProgress = $('aside.content#in-progress').offset().top, __pTodo = $('aside.content#todo').offset().top, __pDoneH = $('aside.content#done').height(), __pInProgressH = $('aside.content#in-progress').height(), __pTodoH = $('aside.content#todo').height();
+    var __fDc = $(window).scrollTop(), __fDb = $('header').height();
+    if(__fDc > __fDb){
       $('body').addClass('onMain');
     } else {
       $('body').removeClass('onMain');
     }
     
+    var __fDa = $(window).offset().top;
     if(__fDa >= __pDone && __fDa < (__pDone+__pDoneH)){
-      var __pDone = $('aside.content#done').offset().top, __pInProgress = $('aside.content#in-progress').offset().top, __pTodo = $('aside.content#todo').offset().top, __pDoneH = $('aside.content#done').height(), __pInProgressH = $('aside.content#in-progress').height(), __pTodoH = $('aside.content#todo').height();
-      console.log((__pDone+__pDoneH+':'+__pDone));
       $('.navbar-menu ul li a[href="#done"]').addClass('cw');
       $('.navbar-menu ul li a[href="#todo"], .navbar-menu ul li a[href="#in-progress"]').removeClass('cw');
     } else if(__fDa >= __pInProgress && __fDa < (__pInProgress+__pInProgressH)){
