@@ -178,6 +178,8 @@ footer .footer-copy a {
   line-height: 35px;
   padding: 0 10px;
   font-size: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .content-main ul li .project-part-image {
   margin-bottom: 5px;
@@ -196,4 +198,23 @@ aside.content:nth-child(odd) .content-main ul li {
 aside.content#todo .content-main ul li {
   padding: 0 10px;
   width: calc(33.333% - 20px);
+}
+.content-main .project-part-name .progress-project {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-project .progress-bar {
+  position: relative;
+  width: 100px;
+  display: block;
+  background: #eee;
+  height: 10px;
+  margin-right: 5px;
+}
+.progress-project .progress-bar .progress-bar-width {
+  display: block;
+  height: 10px;
+  background: #097;
 }
