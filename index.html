@@ -157,7 +157,7 @@ function JSONPrintWB(__d){
         if(typeof __lXa[__d][iXd].p == 'undefined'){
           var __dYc = '';
         } else {
-          var __dYc = '<span class="progress-project"><span class="progress-bar"><i class="progress-bar-width" style="width: '+typeof __lXa[__d][iXd].p+'%"></i></span> '+typeof __lXa[__d][iXd]+'%</span>';
+          var __dYc = '<span class="progress-project"><span class="progress-bar"><i class="progress-bar-width" style="width: '+__lXa[__d][iXd].p+'%"></i></span> '+__lXa[__d][iXd].p+'%</span>';
         }
       }
       __dXa += '<li class="project-list-item'+__dYa+'">'+__dYb+'<div class="project-part-name">'+__lXa[__d][iXd].t+__dYc+'</div></li>';
