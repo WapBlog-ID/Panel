@@ -151,9 +151,9 @@ function JSONPrintWB(__d){
     var __dXa = '';
     for(iXd=0; iXd<__lXa[__d].length; iXd++){
       if(typeof __lXa[__d][iXd].i == 'undefined'){
-        var __dYa = 'no-class', __dYb = '';
+        var __dYa = 'no-image', __dYb = '';
       } else {
-        var __dYa = 'with-image" style="background-image: url(assets/img/'+__lXa[__d][iXd].i+'.png);', __dYb = '<img class="project-part-image" src="assets/img/'+__lXa[__d][iXd].i+'.png">';
+        var __dYa = 'with-image', __dYb = '<div class="project-part-image"><img src="assets/img/'+__lXa[__d][iXd].i+'.png"></div>';
       }
       __dXa += '<li class="project-list-item'+__dYa+'">'+__dYb+'<div class="project-part-name">'+__lXa[__d][iXd].t+'</div></li>';
     }
