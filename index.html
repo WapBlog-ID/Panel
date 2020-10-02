@@ -203,9 +203,15 @@ __WB.ready(function(){
       $('body').removeClass('onMain');
     }
     
-    if(__fDa >= __pDone && __fDa < __pDone+__pDoneH){
+    if(__fDa >= __pDone && __fDa < (__pDone+__pDoneH)){
       $('.navbar-menu ul li a[href="#done"]').addClass('cw');
       $('.navbar-menu ul li a[href="#todo"], .navbar-menu ul li a[href="#in-progress"]').removeClass('cw');
+    } else if(__fDa >= __pInProgress && __fDa < (__pInProgress+__pInProgrssH)){
+      $('.navbar-menu ul li a[href="#in-progress"]').addClass('cw');
+      $('.navbar-menu ul li a[href="#done"], .navbar-menu ul li a[href="#todo"]').removeClass('cw');
+    } else if(__fDa >= __pTodo && __fDa < (__pTodo+__pTodoH)){
+      $('.navbar-menu ul li a[href="#todo"]').addClass('cw');
+      $('.navbar-menu ul li a[href="#done"], .navbar-menu ul li a[href="#in-progress"]').removeClass('cw');
     } else {
       $('.navbar-menu ul li a').removeClass('cw');
     }
