@@ -204,7 +204,7 @@ __WB.ready(function(){
     }
     
     if(__fDa >= __pDone && __fDa < (__pDone+__pDoneH)){
-      console.log((__pDone+__pDoneH));
+      console.log((__pDone+__pDoneH+':'__pDone));
       $('.navbar-menu ul li a[href="#done"]').addClass('cw');
       $('.navbar-menu ul li a[href="#todo"], .navbar-menu ul li a[href="#in-progress"]').removeClass('cw');
     } else if(__fDa >= __pInProgress && __fDa < (__pInProgress+__pInProgressH)){
