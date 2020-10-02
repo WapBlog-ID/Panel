@@ -312,3 +312,13 @@ section#sidebar ul li i {
   color: #ef0030;
   text-align: center;
 }
+
+body.onMain {
+  padding-top: 120px;
+}
+body.onMain nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
