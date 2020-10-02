@@ -108,7 +108,8 @@ nav .navbar-menu ul li a {
   position: relative;
   padding: 0 5px;
 }
-nav .navbar-menu ul li a:after {
+nav .navbar-menu ul li a:after,
+nav .navbar-menu ul li a.cw {
   position: absolute;
   left: 50%;
   right: 50%;
@@ -321,4 +322,5 @@ body.onMain nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
