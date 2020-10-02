@@ -108,8 +108,7 @@ nav .navbar-menu ul li a {
   position: relative;
   padding: 0 5px;
 }
-nav .navbar-menu ul li a:after,
-nav .navbar-menu ul li a.cw {
+nav .navbar-menu ul li a:after {
   position: absolute;
   left: 50%;
   right: 50%;
@@ -120,7 +119,8 @@ nav .navbar-menu ul li a.cw {
   transition: all .4s;
   line-height: 0;
 }
-nav .navbar-menu ul li a:hover:after {
+nav .navbar-menu ul li a:hover:after,
+nav .navbar-menu ul li a.cw:after {
   left: 0;
   right: 0;
 }
