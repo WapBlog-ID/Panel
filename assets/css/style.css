@@ -298,6 +298,7 @@ section#sidebar ul li {
   font-weight: 300;
   border-radius: 4px;
   cursor: pointer;
+  position: relative;
 }
 section#sidebar ul li:hover {
   background: #0002;
@@ -313,7 +314,13 @@ section#sidebar ul li i {
   color: #ef0030;
   text-align: center;
 }
-
+section#sidebar ul li i.fa.fa-check {
+  position: absolute;
+  right: 0;
+  font-size: 17px;
+  color: #fff;
+  background: #00af4e;
+}
 body.onMain {
   padding-top: 120px;
 }
