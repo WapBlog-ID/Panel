@@ -244,6 +244,9 @@ __WB.ready(function(){
     $('body').append('<div class="image-preview"><h4><span class="image-preview-title">Preview Image</span><a class="close"><i class="fa fa-times"></i><span class="hdd">Close</span></a></h4><div class="image-preview-content"><img src="'+$(this).attr('src')+'" /></div></div>');
   }).on('click', 'a.close', function(){
     $('.image-preview').remove();
+  }).on('click', '.project-part-image i.fa.fa-info', function(){
+    var a = $(this).parents('aside.content').attr('id'), b = $(this).parents('.project-list-item').attr('data-id');
+    alert(__lXa.a[b]);
   });
 });
 function JSONPrintWB(__d){
@@ -262,7 +265,7 @@ function JSONPrintWB(__d){
           var __dYc = '<span class="progress-project"><span class="progress-bar"><i class="progress-bar-width" style="width: '+__lXa[__d][iXd].p+'%"></i></span> '+__lXa[__d][iXd].p+'%</span>';
         }
       }
-      __dXa += '<li class="project-list-item'+__dYa+'">'+__dYb+'<div class="project-part-name">'+__lXa[__d][iXd].t+__dYc+'</div></li>';
+      __dXa += '<li class="project-list-item'+__dYa+'" data-id="'+iXd+'">'+__dYb+'<div class="project-part-name">'+__lXa[__d][iXd].t+__dYc+'</div></li>';
     }
     return __dXa;
   }
