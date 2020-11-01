@@ -242,7 +242,7 @@ __WB.ready(function(){
       $('.image-preview').remove();
     }
     $('body').append('<div class="image-preview"><h4><span class="image-preview-title">Preview Image</span><a class="close"><i class="fa fa-times"></i><span class="hdd">Close</span></a></h4><div class="image-preview-content"><img src="'+$(this).attr('src')+'" /></div></div>');
-  }).on('on', 'a.close', function(){
+  }).on('click', 'a.close', function(){
     $('.image-preview').remove();
   });
 });
