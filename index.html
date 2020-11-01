@@ -246,7 +246,7 @@ __WB.ready(function(){
     $('.image-preview').remove();
   }).on('click', '.project-part-image i.fa.fa-info', function(){
     var a = $(this).parents('aside.content').attr('id'), b = $(this).parents('.project-list-item').attr('data-id');
-    alert(__lXa.a[b].t);
+    alert(__lXa[a][b].t);
   });
 });
 function JSONPrintWB(__d){
