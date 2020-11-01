@@ -207,6 +207,8 @@ footer .footer-copy a {
   text-align: center;
   border-radius: 50%;
   box-shadow: 0 2px 2px #0003;
+  z-index: 9;
+  cursor: pointer;
 }
 aside.content:nth-child(even) .content-main ul li {
   background: #fff;
