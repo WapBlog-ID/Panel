@@ -220,7 +220,7 @@ __WB.ready(function(){
   });
   $(window).scroll(function(){
     var __pDone = $('aside.content#done').offset().top, __pInProgress = $('aside.content#in-progress').offset().top, __pTodo = $('aside.content#todo').offset().top, __pDoneH = $('aside.content#done').height(), __pInProgressH = $('aside.content#in-progress').height(), __pTodoH = $('aside.content#todo').height();
-    var __fDc = $(window).scrollTop(), __fDb = $('header').height(), __fDa = __fDb;
+    var __fDc = $(window).scrollTop(), __fDb = $('header').height(), __fDa = __fDc+40;
     if(__fDa > __fDb){
       $('body').addClass('onMain');
     } else {
