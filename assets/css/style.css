@@ -330,7 +330,7 @@ section#sidebar ul li i {
   display: block;
   line-height: 35px;
   border-radius: 5px;
-  color: #ff244d;
+  color: #ef0030;
   text-align: center;
 }
 section#sidebar ul li i.fa.fa-check {
@@ -338,6 +338,12 @@ section#sidebar ul li i.fa.fa-check {
   right: 0;
   font-size: 17px;
   color: #fff;
+  background: #00af4e;
+}
+section#sidebar ul li i {
+  color: #ff244d;
+}
+body.wb-dark section#sidebar ul li i.fa.fa-check {
   background: #00af4e;
 }
 body.onMain {
