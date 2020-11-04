@@ -283,10 +283,13 @@ function modeSite(){
       var b = a[i].trim();
       if(b == 'mode=dark'){
         $('a.switch-mode#dark').trigger('click');
+        alert('dddd');
       }
+      alert('bbb:'+b);
     }
+    alert('aaa:'+typeof a+'::'+typeof a[0]);
   }
-  return false;
+  alert('ccc');
 }
 function JSONPrintWB(__d){
   if(typeof __lXa[__d] == 'undefined'){
