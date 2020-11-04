@@ -330,7 +330,7 @@ section#sidebar ul li i {
   display: block;
   line-height: 35px;
   border-radius: 5px;
-  color: #ef0030;
+  color: #ff244d;
   text-align: center;
 }
 section#sidebar ul li i.fa.fa-check {
@@ -400,4 +400,24 @@ body.onMain nav {
   box-shadow: 0 0 7px 1px #0007;
   max-width: 100%;
   max-height: 100%;
+}
+body.wb-dark {
+  background: #1a1b2e;
+  color: #eee;
+}
+body.wb-dark section#content aside.content {
+  background: #0003;
+}
+body.wb-dark footer{
+  background: #0007;
+}
+body.wb-dark aside.content:nth-child(even) .content-main ul li {
+  background: #0001;
+  border: 1px solid #000;
+}
+aside.content:nth-child(odd) .content-main ul li {
+  background: #1a1b2e;
+}
+nav ul li a.switch-mode#dark i {
+  color: #151625;
 }
