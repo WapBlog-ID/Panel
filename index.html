@@ -212,6 +212,7 @@ var __lXc = new Array('dark', 'light');
 __WB.ready(function(){
   var __currentYear = new Date().getFullYear();
   $('.current-year').text(__currentYear);
+  modeSite();
   
   $('aside.content').each(function(iXa){
     var __cXa = $(this).attr('id'), __cXb = $(this).children('.container').children('.content-main');
@@ -267,12 +268,25 @@ __WB.ready(function(){
       }
     } else {
       $('body').removeClass('wb-dark');
-        $(this).attr('id', 'light');
+        $(this).attr('id', 'dark');
         $('a.switch-mode i').attr('class', 'fa fa-toggle-off');
         $('a.switch-mode .status').text('Off');
     }
+    var b = 3600*24*7;
+    document.cookie = 'mode='+a+'; max-age='+b+'; path=/; domain=project.wapblog.id; same-site=strict; secure';
   });
 });
+function modeSite(){
+  var a = document.cookie.split(';');
+  if(typeof a[0] == 'string'){
+    for(var i=0; i<a.length; i++){
+      var b = a[i].trim();
+      if(b == 'mode=dark'){
+        $('a.switch-mode#dark').trigger('click');
+    }
+  }
+  return false;
+}
 function JSONPrintWB(__d){
   if(typeof __lXa[__d] == 'undefined'){
     return false;
