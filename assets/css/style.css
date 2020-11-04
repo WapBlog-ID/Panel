@@ -415,7 +415,7 @@ body.wb-dark aside.content:nth-child(even) .content-main ul li {
   background: #0001;
   border: 1px solid #000;
 }
-aside.content:nth-child(odd) .content-main ul li {
+body.wb-dark aside.content:nth-child(odd) .content-main ul li {
   background: #1a1b2e;
 }
 nav ul li a.switch-mode#dark i {
