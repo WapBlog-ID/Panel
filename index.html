@@ -283,7 +283,7 @@ function modeSite(){
       var b = a[i].trim();
       if(b == 'mode=dark'){
         $('body').addClass('wb-dark');
-        $(this).attr('id', 'light');
+        $('a.switch-mode#dark').attr('id', 'light');
         $('a.switch-mode i').attr('class', 'fa fa-toggle-on');
         $('a.switch-mode .status').text('On');
       }
