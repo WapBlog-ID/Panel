@@ -268,9 +268,9 @@ __WB.ready(function(){
       }
     } else {
       $('body').removeClass('wb-dark');
-        $(this).attr('id', 'dark');
-        $('a.switch-mode i').attr('class', 'fa fa-toggle-off');
-        $('a.switch-mode .status').text('Off');
+      $(this).attr('id', 'dark');
+      $('a.switch-mode i').attr('class', 'fa fa-toggle-off');
+      $('a.switch-mode .status').text('Off');
     }
     var b = 3600*24*7;
     document.cookie = 'mode='+a+'; max-age='+b+'; path=/; domain=project.wapblog.id; same-site=strict; secure';
@@ -282,14 +282,13 @@ function modeSite(){
     for(var i=0; i<a.length; i++){
       var b = a[i].trim();
       if(b == 'mode=dark'){
-        $('a.switch-mode#dark').trigger('click');
-        alert('dddd');
+        $('body').addClass('wb-dark');
+        $(this).attr('id', 'light');
+        $('a.switch-mode i').attr('class', 'fa fa-toggle-on');
+        $('a.switch-mode .status').text('On');
       }
-      alert('bbb:'+b);
     }
-    alert('aaa:'+typeof a+'::'+typeof a[0]);
   }
-  alert('ccc');
 }
 function JSONPrintWB(__d){
   if(typeof __lXa[__d] == 'undefined'){
