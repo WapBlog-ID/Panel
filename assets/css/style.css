@@ -79,6 +79,7 @@ header nav a {
   display: block;
   color: #fff;
   line-height: 50px;
+  white-space: nowrap;
 }
 nav .container {
   display: flex;
@@ -185,6 +186,9 @@ footer .footer-copy a {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content-main ul li .project-part-image {
   margin-bottom: 5px;
@@ -426,4 +430,45 @@ body.wb-dark aside.content:nth-child(odd) .content-main ul li {
 }
 nav ul li a.switch-mode#dark i {
   color: #151625;
+}
+@media(max-width: 600px){
+  nav .container,
+  .color-header .container {
+    display: block;
+  }
+  nav .navbar-menu ul {
+    justify-content: flex-start;
+  }
+  .content-main ul li,
+  aside.content#todo .content-main ul li,
+  section#sidebar ul li {
+    width: 100%;
+  }
+  .color-header {
+    padding: 0;
+    margin: 0 -15px;
+  }
+  .color-header .color-right,
+  .color-header .color-left {
+    width: 100%;
+    height: 172px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .color-header:after, .color-header:before {
+    display: none;
+  }
+  .color-header .color-left {
+    background: #dd0d2d;
+    box-shadow: inset 0 2px 2px #0003;
+    border-bottom: 2px solid #0002;
+  }
+  .color-header .color-right {
+    background: #de1339;
+    border-top: 2px solid #0002;
+  }
+  nav .navbar-brand a {
+    margin-right: 0;
+  }
 }
