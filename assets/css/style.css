@@ -415,7 +415,7 @@ body.wb-dark {
   background: #1a1b2e;
   color: #eee;
 }
-body.wb-dark section#content aside.content {
+body.wb-dark section#content aside.content:nth-child(odd) {
   background: #0003;
 }
 body.wb-dark footer{
@@ -423,7 +423,7 @@ body.wb-dark footer{
 }
 body.wb-dark aside.content:nth-child(even) .content-main ul li {
   background: #0001;
-  border: 1px solid #000;
+  border: 1px solid transparent;
 }
 body.wb-dark aside.content:nth-child(odd) .content-main ul li {
   background: #1a1b2e;
