@@ -431,6 +431,12 @@ body.wb-dark aside.content:nth-child(odd) .content-main ul li {
 nav ul li a.switch-mode#dark i {
   color: #151625;
 }
+.wb-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 @media(max-width: 600px){
   nav .container,
   .color-header .container {
